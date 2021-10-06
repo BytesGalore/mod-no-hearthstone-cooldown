@@ -13,5 +13,12 @@
 #        Default:     1 - Enabled
 #                     0 - Disabled
 #
+#    NoHearthstoneCooldownConfig.Announce 
+#        Description: Inform the player about the loaded module
+#        Default:     1 - Enabled
+#                     0 - Disabled
+#
 
 NoHearthstoneCooldown.Enable = 1
+
+NoHearthstoneCooldown.Announce = 1
