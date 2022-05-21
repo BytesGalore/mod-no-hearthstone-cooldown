@@ -24,7 +24,7 @@
 # Description
 A module that simply skips the cooldown of the Hearthstone
 #### Features:
-- It resets the Hearthstone cooldown immediatly
+- It resets the Hearthstone cooldown immediately
 
 ### This module currently requires:
 - AzerothCore v4.0.0+
