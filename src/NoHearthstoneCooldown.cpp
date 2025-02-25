@@ -13,13 +13,13 @@ class NoHearthstoneCooldown : public PlayerScript, public WorldScript
 public:
     NoHearthstoneCooldown(): PlayerScript("NoHearthstoneCooldown"), WorldScript("NoHearthstoneCooldown") {}
 
-    bool OnBeforeTeleport(Player* player, uint32 /*mapid*/, float /*x*/, float /*y*/, float /*z*/, float /*orientation*/, uint32 /*options*/, Unit* /*target*/) override
+    bool OnPlayerBeforeTeleport(Player* player, uint32 /*mapid*/, float /*x*/, float /*y*/, float /*z*/, float /*orientation*/, uint32 /*options*/, Unit* /*target*/) override
     {
         ClearHearthstoneCooldown(player);
         return true; 
     }
 
-    void OnLogin(Player* player) override
+    void OnPlayerLogin(Player* player) override
     {
         if (sConfigMgr->GetOption<bool>("NoHearthstoneCooldown.Announce", true))
         {
